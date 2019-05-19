@@ -1,1 +1,1 @@
-[YouTube-client](https://mitskevichvs.github.io/youtube-client)
+[YouTube-client](https://MitskevichVS.github.io/YouTube-client)
