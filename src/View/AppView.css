@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'Noticia Text';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../../assets/fonts/NoticiaText-Regular.ttf')
+}
+
+@font-face {
+	font-family: 'Noticia Text';
+	font-style: bold;
+	font-weight: 700;
+	src: url('../../assets/fonts/NoticiaText-Bold.ttf')
+}
+
+main {
+  overflow: hidden;
+  transition: all 5s ease;
+}
+
+.mainDiv {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.3s;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 17vw;
+  height: 32vw;
+  background-color: #F5F5F6;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 7% 4vw;
+  overflow: hidden;
+}
+
+
+.wrapper>p {
+  display: block;
+  text-align: center;
+  white-space: normal;
+  display: block;
+  margin: 5% 0;
+  font-weight: 700;
+  overflow: hidden;
+  height: 8%;
+  font-family: 'Noticia Text', sans-serif;
+}
+
+.wrapper:hover{
+  transform: scale(1.08);
+  transition: 1s;
+}
+
+.wrapper:not(:hover) {
+  transition: 1s;
+}
+
+.wrapper i {
+  margin: 3% 10%;
+}
+
+.wrapper__info {
+  display: flex;
+  text-align: center;
+  font-family: 'Noticia Text', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper__info p {
+  width: 100%;
+  margin: 2% 12%;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Noticia Text', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: 46%;
+  padding-top: 10px;
+}
+
+.wrapper .description {
+  padding: 0 4%;
+}
+
+.description p {
+  word-wrap: break-word;
+  white-space: normal;
+  margin: 3% 0;
+  text-align: center;
+  font-family: 'Noticia Text', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.slider.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    width: 21vw;
+    height: 42vw;
+    margin: 7vw 2vw;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 29vw;
+    height: 42vw;
+    margin: 7vw 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 45vw;
+    height: 70vw;
+    margin: 7vw 2vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper {
+    width: 92vw;
+    height: 120vw;
+    margin: 7vw 2vw;
+    font-size: 1.1em;
+  }
+}

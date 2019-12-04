@@ -1,0 +1,33 @@
+body {
+  background-color: #E1E2E1;
+}
+
+.header_search {
+   width: 50%;
+   margin: 0 auto;
+   border: 1px solid #999;
+   background-color: #fff;
+   min-height: 30px;
+   border-radius: 4px;
+ }
+
+ #input_text {
+   width: calc(100% - 34px);
+   border: none;
+   outline: none;
+   line-height: 25px;
+   background: none;
+   font-size: 140%;
+ }
+
+ #input_submit {
+  border: none;
+  width: 30px;
+  height: 20px;
+  background: url(../assets/img/search.png) 50% 50% no-repeat;
+  margin-top: 5px;
+}
+
+#input_submit:hover {
+  cursor: pointer;
+}
